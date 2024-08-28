@@ -1,0 +1,61 @@
+.chad {
+    transition: transform 350ms ease-out;
+    will-change: transform;
+}
+
+.cat {
+    transition: transform 350ms ease-out;
+    will-change: transform;
+}
+
+.triggerButton {
+    color: transparent;
+    background-image: linear-gradient(90deg, white 50%, black 50%);
+    background-position: 100%;
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    transition: background-position 350ms ease-out;
+}
+
+.triggerButton:hover {
+    background-position: left;
+}
+
+.catTriggerButton {
+    color: transparent;
+    background-image: linear-gradient(90deg, black 50%, #ffd900c0 50%);
+    background-position: 0%;
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    transition: background-position 350ms ease-out;
+}
+
+.catTriggerButton:hover {
+    background-position: right;
+}
+
+.triggerButton:hover+.chad {
+    transform: translateX(0);
+}
+
+.catTriggerButton:hover+.cat {
+    transform: translateX(0);
+}
+
+.comfortaa-title {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.comfortaa-normal {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
